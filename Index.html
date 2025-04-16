@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelatihan HTML - Landing Page Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header style="background-color: #14d77f; color: rgb(244, 238, 244); text-align: center; padding: 20px;">
+        <h1>Belajar Membuat Landing Page</h1>
+        <p>Pelatihan HTML</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav class="sidebar">
+        <button id="toggleSidebar" class="toggle-btn">☰</button>
+        <a href="#home"><i class="fas fa-home"></i> Beranda</a>
+        <a href="#about"><i class="fas fa-info-circle"></i> Tentang</a>
+        <a href="#services"><i class="fas fa-cogs"></i> Layanan</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Kontak</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" style="text-align: center; padding: 50px 20px; background-color: #f0f0f0;">
+        <h2>Selamat Datang di Pelatihan Kami</h2>
+        <p>Mari belajar membuat website sederhana dengan HTML dasar</p>
+        <button style="background-color: #2d6a4f; color: white; border: none; padding: 10px 20px; margin-top: 20px;">Mulai Belajar</button>
+    </section>
+
+    <!-- Tentang -->
+    <section id="about" style="padding: 30px 20px; text-align: center;">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah penyedia pelatihan pemrograman web untuk pemula yang ingin memulai karir di bidang teknologi.</p>
+        
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <div style="margin: 0 15px;">
+                <h3>Mudah Dipahami</h3>
+                <p>Materi disampaikan dengan bahasa yang sederhana</p>
+            </div>
+            <div style="margin: 0 15px;">
+                <h3>Praktik Langsung</h3>
+                <p>Belajar sambil langsung mempraktikkan kode</p>
+            </div>
+            <div style="margin: 0 15px;">
+                <h3>Gratis</h3>
+                <p>Tidak ada biaya untuk pelatihan dasar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="services" style="background-color: #188eb9; padding: 30px 20px; text-align: center;">
+        <h2>Layanan Kami</h2>
+        
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <div style="background-color: rgb(16, 209, 74); margin: 10px; padding: 20px; width: 200px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3>HTML Dasar</h3>
+                <p>Belajar struktur dasar HTML</p>
+            </div>
+            <div style="background-color: rgb(16, 209, 74); margin: 10px; padding: 20px; width: 200px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3>Form HTML</h3>
+                <p>Membuat form interaktif</p>
+            </div>
+            <div style="background-color: rgb(16, 209, 74); margin: 10px; padding: 20px; width: 200px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3>Tabel HTML</h3>
+                <p>Mengatur data dalam tabel</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section style="padding: 30px 20px; text-align: center;">
+        <h2>Apa Kata Peserta</h2>
+        
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <div style="margin: 10px; padding: 20px; border: 1px solid #cf6711; width: 250px;">
+                <p>"Pelatihannya sangat mudah dipahami untuk pemula seperti saya."</p>
+                <p><strong>- Budi, Mahasiswa</strong></p>
+            </div>
+            <div style="margin: 10px; padding: 20px; border: 1px solid #cf6711; width: 250px;">
+                <p>"Materinya praktis dan langsung bisa diaplikasikan."</p>
+                <p><strong>- Ani, Guru</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" style="background-color: #2d6a4f; color: white; padding: 30px 20px; text-align: center;">
+        <h2>Hubungi Kami</h2>
+        <p>Email: info@pelatihanhtml.com</p>
+        <p>Telepon: (+62) 882-0077-43651 </p>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2025 Pelatihan HTML Dasar. Semua hak dilindungi.</p>
+    </footer>
+    <script>
+        const toggleBtn = document.getElementById('toggleSidebar');
+        const sidebar = document.querySelector('.sidebar');
+    
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('show');
+        });
+    </script>   
+</body>
+</html>
